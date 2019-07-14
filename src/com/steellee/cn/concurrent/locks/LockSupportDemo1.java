@@ -13,7 +13,7 @@ import java.util.concurrent.locks.LockSupport;
  * @Copyright: Copyright (c) 2019
  * 
  */
-public class LockSupportTest {
+public class LockSupportDemo1 {
 
 	public static void main(String[] args) {
 		System.out.println("begin park!");

@@ -15,7 +15,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * @Copyright: Copyright (c) 2019
  *
  */
-public class CopyOnWriteArrayListTest {
+public class CopyOnWriteArrayListDemo {
 	private static volatile CopyOnWriteArrayList<String> arrayList = new CopyOnWriteArrayList<>();
 
 	public static void main(String[] args) throws InterruptedException {
