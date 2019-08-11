@@ -16,9 +16,13 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  */
 public class ReentrantLockList {
-	// 线程不安全的 List
+	/**
+	 * 线程不安全的 List
+	 */
 	private ArrayList<String> array = new ArrayList();
-	// 独占锁
+	/**
+	 * 独占锁
+	 */
 	private volatile ReentrantLock lock = new ReentrantLock();
 
 	/**

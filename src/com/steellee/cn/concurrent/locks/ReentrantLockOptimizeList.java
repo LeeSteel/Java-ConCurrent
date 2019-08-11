@@ -18,12 +18,21 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  *
  */
 public class ReentrantLockOptimizeList {
-	// 线程不安全的 List
+	/**
+	 * 线程不安全的 List
+	 */
 	private ArrayList<String> array = new ArrayList();
-	// 独占锁
+	/**
+	 * 独占锁
+	 */
 	private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
-
+	/**
+	 *  读锁
+	 */
 	private final Lock readLock = lock.readLock();
+	/**
+	 * 	写锁
+	 */
 	private final Lock writeLock = lock.writeLock();
 
 	/**
