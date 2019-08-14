@@ -19,6 +19,7 @@ public class CopyOnWriteArrayListDemo {
 	private static volatile CopyOnWriteArrayList<String> arrayList = new CopyOnWriteArrayList<>();
 
 	public static void main(String[] args) throws InterruptedException {
+		
 		arrayList.add("hello");
 		arrayList.add("alibaba");
 		arrayList.add("welcome");

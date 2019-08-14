@@ -16,13 +16,19 @@ import java.util.concurrent.locks.LockSupport;
 public class LockSupportDemo3 {
 
 	/**
-	 * @throws InterruptedException
-	 * @Title: main @Description: 主方法 @param: @param args @return: void @throws
+	 * 
+	 * @Title: main   
+	 * @Description: 主方法
+	 * @author: 李钢 2580704698@qq.com     
+	 * @date:   2019年8月14日 下午10:36:10 
+	 * @param args
+	 * @throws InterruptedException      
+	 * @return: void
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		Thread thread = new Thread(() -> {
 			System.out.println("child thread begin park !");
-			//循环调用 park 方法,挂起自己,只有被中断才会退出循环
+			// 循环调用 park 方法,挂起自己,只有被中断才会退出循环
 			while (!Thread.currentThread().isInterrupted()) {
 				// 调用LockSupport 方法 挂起自己
 				LockSupport.park();
